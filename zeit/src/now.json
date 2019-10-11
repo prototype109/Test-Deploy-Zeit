@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "name": "Test-Deploy-Zeit", 
+    "builds": [{ "src": "Test-Deploy-Zeit/package.json", "use": "@now/static-build",
+        "config": {"distDir": "build"} }],
+        "routes": [
+            { "src": "/(.*)", "dest": "Test-Deploy-Zeit/$1" }
+        ]
+}
